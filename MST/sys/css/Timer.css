@@ -1,0 +1,61 @@
+#timer_app {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px 22px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 22px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 22px 1px rgba(0, 0, 0, 0.2);
+}
+
+.base_timer {
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.base_timer_circle {
+    fill: none;
+    stroke: none;
+}
+
+.base_timer_path_elapsed {
+    stroke-width: 7px;
+    stroke: rgb(235, 235, 235);
+}
+
+.base_timer_label {
+    position: absolute;
+    font-size: 60px;
+    color: rgb(104, 104, 104);
+}
+
+.base_timer_path_remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    stroke: #ffd6fb;
+}
+
+.base_timer_svg {
+    transform: scaleX(-1);
+}
+
+#onclick_start_timer {
+    margin: auto;
+}
+
+#current_exercise {
+    font-size: xx-large;
+}
+
+.exercise_title {
+    border: 2px solid rgb(240, 240, 240);
+    padding: 0px 2px 2px 2px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}

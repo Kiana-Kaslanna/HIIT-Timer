@@ -1,0 +1,101 @@
+/* 
+# ios-style-switch 
+
+<div class='ios_style_switch'>
+    <div class='ios_style_switch_text'>
+        instruction text
+    </div>
+    <input class="ios_style_switch_toggle" type="checkbox" id="checkbox1" checked />
+    <label for="checkbox1" class="ios_style_switch_checkbox" onclick="sound_on_off()"></label>
+</div>
+
+*/
+
+:root {
+    --green: rgb(120, 224, 118);
+    --red: #f07961;
+    --blue: #67e9ee;
+    --ios-style-color: var(--red);
+}
+
+.ios_style_switch {
+    margin: 0vh auto 5vh auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    width: 200px;
+}
+
+.ios_style_switch *,
+.ios_style_switch *:before,
+.ios_style_switch *:after {
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.ios_style_switch_text {
+    color: rgb(136, 136, 136);
+    font-size: 19px;
+    float: left;
+}
+
+.ios_style_switch_toggle,
+.ios_style_switch_toggle:active {
+    display: none;
+}
+
+.ios_style_switch_checkbox,
+.checkbox-label {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 66px;
+    line-height: 100%;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.ios_style_switch_checkbox:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    background: white;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+}
+
+.ios_style_switch_toggle:checked+.ios_style_switch_checkbox {
+    -webkit-box-shadow: inset 0 0 0 20px var(--ios-style-color), 0 0 0 2px var(--ios-style-color);
+    -moz-box-shadow: inset 0 0 0 20px var(--ios-style-color), 0 0 0 2px var(--ios-style-color);
+    box-shadow: inset 0 0 0 20px var(--ios-style-color), 0 0 0 2px var(--ios-style-color);
+}
+
+.ios_style_switch_toggle:checked+.ios_style_switch_checkbox:before {
+    left: calc(100% - 30px);
+    -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+}
+
+.ios_style_switch_toggle+.ios_style_switch_checkbox {
+    -webkit-box-shadow: inset 0 0 0 0px var(--ios-style-color), 0 0 0 2px #dddddd;
+    -moz-box-shadow: inset 0 0 0 0px var(--ios-style-color), 0 0 0 2px #dddddd;
+    box-shadow: inset 0 0 0 0px var(--ios-style-color), 0 0 0 2px #dddddd;
+}

@@ -1,0 +1,62 @@
+#page_user,
+#page_user_logout {
+    width: 100%;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 0.8);
+    text-align: center;
+    z-index: 3;
+}
+
+#user_panel,
+#user_logout_panel {
+    display: flex;
+    background: white;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    padding-bottom: 3vh;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 22px 1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 1px 1px 22px 1px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 1px 1px 22px 1px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_panel_close {
+    align-self: flex-end;
+}
+
+#user_who_log_in {
+    font-size: x-large;
+    color: rgb(100, 100, 100);
+    margin-top: 9vh;
+    margin-bottom: 16vh;
+}
+
+#user_panel_form {
+    margin-top: 3vh;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_panel_form_input,
+.user_panel_form_label {
+    line-height: 20px;
+    font-size: 20px;
+    width: 80%;
+    color: rgb(100, 100, 100);
+}
+
+#user_panel_escape {
+    text-decoration: underline;
+    color: silver;
+    margin: 10px;
+}
+
+#user_panel_escape:hover {
+    color: rgb(165, 107, 157);
+}

@@ -1,0 +1,32 @@
+#page_load {
+    background-color: rgba(248, 248, 248, 0.8);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 6;
+}
+
+#load_gif img {
+    width: 50vw;
+    max-width: 300px;
+}
+
+#page_msg {
+    background-color: rgba(248, 248, 248, 0.8);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 6;
+}
+
+#msg_txt {
+    box-shadow: 1px 1px 22px 1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 1px 1px 22px 1px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 1px 1px 22px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 60vw;
+    font-size: 20px;
+    padding: 30px;
+    color: #ff6e6e;
+    background-color: white;
+}
